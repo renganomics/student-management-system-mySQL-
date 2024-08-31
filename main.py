@@ -14,7 +14,7 @@ from PyQt6.QtWidgets import QApplication, QLabel, QWidget, QGridLayout, \
 class DatabaseConnection:
 
     # Retrieve server password environment variable
-    sql_password = os.environ["SQLPASS"]
+    sql_password = os.environ["MYSQL_PASSWORD"]
     print(sql_password)
 
     def __init__(self, host="localhost", user="root", password=sql_password,
